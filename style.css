@@ -361,7 +361,8 @@ input, select, textarea, button { font: inherit; color: inherit; }
 /* ---------- patička ---------- */
 .footer { background: var(--black); color: #8f8a80; border-top: 22px solid transparent; border-image: repeating-linear-gradient(-45deg, var(--yellow) 0 20px, var(--black) 20px 40px) 22; }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding: 36px 0; }
-.footer p { margin: 0; font-size: 15px; text-align: right; }
+.footer p { margin: 0; font-size: 15px; line-height: 1.6; text-align: right; }
+.footer p strong { color: #d8d3c9; }
 .logo--small .logo__name { font-size: 24px; }
 .footer__credit {
   padding: 14px 0 22px;
