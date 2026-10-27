@@ -1,0 +1,212 @@
+{
+    "updated": "2026-10-02",
+    "categories": [
+        {
+            "id": "zelezo",
+            "name": "Železo a ocel",
+            "short": "Železo",
+            "sym": "Fe",
+            "no": 26,
+            "metal": "fe"
+        },
+        {
+            "id": "hlinik",
+            "name": "Hliník",
+            "short": "Hliník",
+            "sym": "Al",
+            "no": 13,
+            "metal": "al"
+        },
+        {
+            "id": "med",
+            "name": "Měď, mosaz, bronz",
+            "short": "Měď",
+            "sym": "Cu",
+            "no": 29,
+            "metal": "cu"
+        },
+        {
+            "id": "ostatni",
+            "name": "Ostatní kovy",
+            "short": "Ostatní",
+            "sym": "Pb",
+            "no": 82,
+            "metal": "pb"
+        }
+    ],
+    "prices": [
+        {
+            "cat": "zelezo",
+            "name": "Kupol - těžký ocelový odpad",
+            "price": 4.5,
+            "featured": true
+        },
+        {
+            "cat": "zelezo",
+            "name": "Železo a ocel - 12 těžký neupr.",
+            "price": 4
+        },
+        {
+            "cat": "zelezo",
+            "name": "Litinový odpad neupravený",
+            "price": 4
+        },
+        {
+            "cat": "zelezo",
+            "name": "Železo a ocel - 27 plech",
+            "price": 3
+        },
+        {
+            "cat": "zelezo",
+            "name": "Autovraky, pračky, bojlery",
+            "price": 1.5
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - Cu chladiče",
+            "price": 60
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - drát nový",
+            "price": 50,
+            "featured": true
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - drát starý",
+            "price": 40
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - plech výrobní",
+            "price": 33
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - kus",
+            "price": 30
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - plech",
+            "price": 26
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník Al-Izoprofil",
+            "price": 25
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník Alfelana",
+            "price": 20
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - plech, žaluzie",
+            "price": 15
+        },
+        {
+            "cat": "hlinik",
+            "name": "Hliník - kabely",
+            "price": 4
+        },
+        {
+            "cat": "med",
+            "name": "Měď - drát nový",
+            "price": 260,
+            "featured": true
+        },
+        {
+            "cat": "med",
+            "name": "Měď - drát starý",
+            "price": 250
+        },
+        {
+            "cat": "med",
+            "name": "Měď - karma",
+            "price": 150
+        },
+        {
+            "cat": "med",
+            "name": "Měď - špony",
+            "price": 150
+        },
+        {
+            "cat": "med",
+            "name": "Bronz",
+            "price": 145
+        },
+        {
+            "cat": "med",
+            "name": "Mosaz stará",
+            "price": 145
+        },
+        {
+            "cat": "med",
+            "name": "Měď - kabely",
+            "price": 80
+        },
+        {
+            "cat": "med",
+            "name": "Ms-Cu chladič",
+            "price": 60
+        },
+        {
+            "cat": "med",
+            "name": "Měď - kabely mastné",
+            "price": 13
+        },
+        {
+            "cat": "ostatni",
+            "name": "SK plátky",
+            "price": 500
+        },
+        {
+            "cat": "ostatni",
+            "name": "Olovo",
+            "price": 25,
+            "featured": true
+        },
+        {
+            "cat": "ostatni",
+            "name": "Nerez",
+            "price": 22
+        },
+        {
+            "cat": "ostatni",
+            "name": "Zinek plech",
+            "price": 20
+        },
+        {
+            "cat": "ostatni",
+            "name": "Elektromotor",
+            "price": 14
+        },
+        {
+            "cat": "ostatni",
+            "name": "Autobaterie",
+            "price": 10
+        },
+        {
+            "cat": "ostatni",
+            "name": "Směsné kovy",
+            "price": 8
+        }
+    ],
+    "gas": [
+        {
+            "kg": 2,
+            "price": 139
+        },
+        {
+            "kg": 10,
+            "price": 479
+        },
+        {
+            "kg": 33,
+            "price": 1599
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+.claude/
+.DS_Store
+# přihlašovací údaje a provozní soubory administrace
+admin/auth.php
+admin/var/attempts.json
+data/backup/

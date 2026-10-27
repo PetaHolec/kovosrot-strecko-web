@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kovošrot Strečko | výkup železa a barevných kovů, Suchohrdly u Miroslavi</title>
+  <meta name="description" content="Výkup železa a barevných kovů v Suchohrdlech u Miroslavi. Aktuální ceník, prodej propan-butanu, provozní doba a kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Saira+Stencil+One&family=Source+Sans+3:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a href="./" class="logo">
+      <span class="logo__top">Kovošrot</span>
+      <span class="logo__name">Strečko</span>
+    </a>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="#cenik">Ceník</a>
+      <a href="#vypocet">Výpočet</a>
+      <a href="#propan">Propan-butan</a>
+      <a href="#doba">Provozní doba</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="tel:+420605252791" class="header__tel">605 252 791</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ÚVOD -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="hero__place">Suchohrdly u Miroslavi 209</p>
+        <h1>Výkup<span>železa a</span><span>barevných kovů</span></h1>
+        <p class="hero__lead">Železo, litina, plech, hliník, měď, mosaz, bronz, nerez, olovo, autobaterie i elektromotory. Prodej propan-butanu.</p>
+        <div class="hero__btns">
+          <a href="#cenik" class="btn btn--yellow">Ceník výkupu</a>
+          <a href="tel:+420605252791" class="btn btn--outline">Zavolat</a>
+        </div>
+        <p class="status" id="status"><i></i><span>…</span></p>
+      </div>
+
+      <div class="elements" id="heroTiles" aria-label="Vybrané výkupní ceny"></div>
+    </div>
+    <div class="hazard" aria-hidden="true"></div>
+  </section>
+
+  <!-- CENÍK -->
+  <section class="sec" id="cenik">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Ceník výkupu</h2>
+        <p class="sec__meta">Platí od <b id="updated"></b><br>ceny v Kč za 1 kg · provozovna CZB00242</p>
+      </div>
+
+      <div class="filters">
+        <div class="filters__tiles" id="catTiles"></div>
+        <label class="search">
+          <span class="sr">Hledat v ceníku</span>
+          <input type="search" id="q" placeholder="Hledat materiál…" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="pricelist" id="priceList"></div>
+      <p class="nothing" id="nothing" hidden>Tohle v ceníku nemáme. Zavolejte na 605 252 791, domluvíme se.</p>
+    </div>
+  </section>
+
+  <!-- VÝPOČET -->
+  <section class="sec sec--yellow" id="vypocet">
+    <div class="wrap calc">
+      <div class="calc__left">
+        <h2>Kolik za to dostanu?</h2>
+        <p>Vyberte materiál, napište váhu a přidejte na lístek. Částka je orientační, přesně se to spočítá až při vážení.</p>
+        <form class="calc__form" id="calcForm">
+          <label>
+            <span>Materiál</span>
+            <select id="calcMat"></select>
+          </label>
+          <label class="calc__kg">
+            <span>Váha v kg</span>
+            <input type="text" id="calcKg" inputmode="decimal" placeholder="0" autocomplete="off">
+          </label>
+          <button type="submit" class="btn btn--black">Přidat na lístek</button>
+        </form>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket__paper">
+          <p class="ticket__head">KOVOŠROT STREČKO s.r.o.<br>Suchohrdly u Miroslavi 209<br><span id="ticketDate"></span></p>
+          <p class="ticket__title">VÁŽNÍ LÍSTEK (ORIENTAČNÍ)</p>
+          <ul class="ticket__list" id="calcList"></ul>
+          <p class="ticket__empty" id="calcEmpty">zatím prázdný</p>
+          <p class="ticket__total"><span>CELKEM</span><b id="calcTotal">0 Kč</b></p>
+          <button type="button" class="ticket__clear" id="calcClear" hidden>vymazat lístek</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPAN -->
+  <section class="sec" id="propan">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Propan-butan</h2>
+        <p class="sec__meta">Prodej lahví v provozní době<br>přímo v areálu</p>
+      </div>
+      <div class="gas" id="gas"></div>
+    </div>
+  </section>
+
+  <!-- O NÁS -->
+  <section class="about">
+    <div class="wrap about__inner">
+      <p class="about__big">Naší prioritou je Vaše spokojenost.</p>
+      <div class="about__text">
+        <p>Předností naší společnosti je profesionalita a dlouholetá zkušenost na trhu. Samozřejmostí je osobní přístup a vysoká pečlivost.</p>
+        <p>V případě jakýchkoli dotazů nás neváhejte kontaktovat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVOZNÍ DOBA -->
+  <section class="sec sec--dark" id="doba">
+    <div class="hazard hazard--top" aria-hidden="true"></div>
+    <div class="wrap hours">
+      <div>
+        <h2>Provozní doba</h2>
+        <p class="status status--big" id="status2"><i></i><span>…</span></p>
+        <p class="hours__note">Ve středu jen po domluvě na čísle<br><a href="tel:+420605014460">605 014 460</a></p>
+      </div>
+      <table class="hours__table" id="hoursTable"></table>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="sec" id="kontakt">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Kontakt</h2>
+      </div>
+
+      <div class="contact">
+        <div class="contact__main">
+          <a href="tel:+420605252791" class="contact__phone">605 252 791</a>
+          <p class="contact__who">Petr Strečko, ředitel</p>
+
+          <div class="contact__cols">
+            <div>
+              <h3>Adresa</h3>
+              <p>KOVOŠROT STREČKO, s.r.o.<br>Suchohrdly u Miroslavi 209<br>671 72</p>
+              <p><a href="https://www.google.com/maps/dir/?api=1&destination=Suchohrdly+u+Miroslavi+209" target="_blank" rel="noopener">Naplánovat trasu →</a></p>
+            </div>
+            <div>
+              <h3>E-mail</h3>
+              <p><a href="mailto:strecko.petr@seznam.cz">strecko.petr@seznam.cz</a><br><a href="mailto:strecko-kovosrot@email.cz">strecko-kovosrot@email.cz</a></p>
+              <h3>IČ</h3>
+              <p>03171981</p>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe title="Mapa: Suchohrdly u Miroslavi 209" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Suchohrdly+u+Miroslavi+209,+671+72&z=15&output=embed"></iframe>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <h3>Napište nám</h3>
+          <label><span>Jméno</span><input name="name" type="text" autocomplete="name"></label>
+          <label><span>E-mail nebo telefon</span><input name="contact" type="text" autocomplete="email"></label>
+          <label><span>Zpráva</span><textarea name="message" rows="6"></textarea></label>
+          <p class="form__err" id="formErr" hidden>Vyplňte prosím jméno, kontakt a zprávu.</p>
+          <button type="submit" class="btn btn--black">Odeslat zprávu</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a href="./" class="logo logo--small">
+      <span class="logo__top">Kovošrot</span>
+      <span class="logo__name">Strečko</span>
+    </a>
+    <p>© <span id="year"></span> KOVOŠROT STREČKO, s.r.o. · IČ 03171981<br>Suchohrdly u Miroslavi 209, 671 72</p>
+  </div>
+  <div class="wrap footer__credit">
+    <span>Web vytvořil <a href="https://www.skocdal.cz" target="_blank" rel="noopener">Skočdál</a></span>
+  </div>
+</footer>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
